@@ -1,0 +1,10 @@
+language: golang-http-template
+function_name: echo-service
+function_type: Public
+image_name: davidleitw/echo-service:latest
+gateway_url: 127.0.0.1
+port: 8080
+namespace: default
+support_verbs:
+- POST
+- GET
