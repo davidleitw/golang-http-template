@@ -3,7 +3,7 @@ FROM golang:1.18 AS build
 WORKDIR /func
 COPY . .  
 RUN go mod tidy
-RUN go build -o handler main.go
+RUN go build --ldflags "-s -w" -o handler main.go
 
 FROM alpine:latest
 WORKDIR /func
