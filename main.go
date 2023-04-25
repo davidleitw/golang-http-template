@@ -10,6 +10,6 @@ import (
 
 func main() {
 	r := router.New()
-	r.POST("/", function.Handler)
+	r.ANY("/", function.Handler)
 	log.Fatalln(fasthttp.ListenAndServe(":8080", r.Handler))
 }

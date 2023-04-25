@@ -8,3 +8,5 @@ namespace: default
 support_verbs:
 - POST
 - GET
+cache_enable: false
+# cache_ttl: '60s'
